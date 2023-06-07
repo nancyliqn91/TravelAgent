@@ -1,0 +1,18 @@
+
+@{
+    ViewData["Title"] = "Travels";
+}
+
+<h1>All Travel Destinations:</h1>
+
+<h3>Actions:</h3>
+
+<p>@Html.ActionLink("Add a new travel destination", "Create")</p>
+
+<h3>Destinations</h3>
+<ol>
+@foreach (Travel travel in Model)
+{
+  <li><strong>@travel.Destination</strong> the @travel.Rating | <a href="/Travels/Details/@(travel.TravelId)">View Details</a></li>
+}
+</ol>

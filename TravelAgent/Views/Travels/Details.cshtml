@@ -1,0 +1,24 @@
+@{
+  ViewData["Title"] = $"Details for {Model.Destination}";
+}
+
+<h1>All About @Model.Destination</h1>
+
+<p>City: @Model.City</p>
+<p>Country: @Model.Age</p>
+<p>Review: @Model.Review</p>
+<p>Rating: @Model.Rating</p>
+<p>Date: @Model.Date</p>
+
+<p>@Html.ActionLink("Edit details", "Edit", new { id = @Model.TravelId })</p>
+
+<p>@Html.ActionLink("Delete travel", "Delete", new { id = @Model.TravelId })</p>
+
+<p>@Html.ActionLink("Return to all travels", "Index")</p>
+
+<!-- public string Destination { get; set; }
+    public string City { get; set; }
+    public string Country { get; set; }
+    public string Review { get; set; }
+    public int Rating { get; set; }
+    public DateTime Date { get; set; } -->
