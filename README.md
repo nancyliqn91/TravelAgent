@@ -16,10 +16,6 @@
 
 ## Description
 
-* A user should be able to use this MVC to see data from TravelApi.
-
-## What Is This?
-
 Application built to make API call to travelapi application and view put, post, get and delete from MySQL library created on corresponding app.
 
 This project is called the "Travel Agent", while the API is called the "Travel API".
